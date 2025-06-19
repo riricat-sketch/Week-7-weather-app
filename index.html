@@ -2,13 +2,46 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="src/index.js" defer></script>
+    <title>My weather application</title>
 </head>
 
 <body>
-    <h1>weather</h1>
+    <div class="container">
+        <img src="images/logo.png" alt="She Codes Logo" class="logo" />
+        <header>
+            <form>
+                <input type="search" placeholder="Enter a city.." required />
+                <input type="submit" value="Search" />
+            </form>
+            <hr />
+        </header>
+        <main>
+            <div class="current-weather">
+                <div>
+                    <h1 id="city-name">Paris</h1>
+                    <p id="date-time">
+                        Saturday 15:32, moderate rain <br />
+                        Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
+                    </p>
+                </div>
+                <div><span>☀️14°C</div><span>
+            </div>
+        </main>
+        <hr />
+        <footer>
+            <p>
+                This project was coded by
+                <a href="#" target="_blank">Ri Audoire</a> and is
+                <a href="#" target="_blank"> on GitHub</a> and
+                <a href="#" target="_blank">hosted on Netlify</a>
+            </p>
+        </footer>
+    </div>
 </body>
 
 </html>
