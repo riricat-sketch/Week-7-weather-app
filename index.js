@@ -33,8 +33,7 @@ function handleSearch(event) {
   axios
     .get(apiUrl)
     .then(function (response) {
-      console.log(response.data); // ✅ Helps debugging
-      console.log(response.data.condition.icon_url);
+      console.log(response.data); // ✅ Helps debuggin
       let temperature = Math.round(response.data.temperature.current);
       let cityName = response.data.city;
       let humidity = response.data.temperature.humidity;
@@ -50,7 +49,7 @@ function handleSearch(event) {
 
       iconElement.setAttribute("src", iconUrl);
       iconElement.setAttribute("alt", description);
-
+      iconElement.classList.add("visible");
       // ✅ Update temperature
       document.querySelector("#temperature").textContent = `${temperature}°C`;
 

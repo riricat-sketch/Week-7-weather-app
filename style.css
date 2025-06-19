@@ -133,3 +133,9 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+#weather-icon {
+  display: none;
+}
+#weather-icon.visible {
+  display: inline;
+}
