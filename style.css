@@ -1,0 +1,128 @@
+/* Ensure the body and html take up the full height of the page */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  background-color: #f4f4f4; /* Optional background color */
+}
+
+/* Container for the whole website */
+.container {
+  width: 100%; /* Adjust width as needed */
+  max-width: 1600px; /* Optional max-width for larger screens */
+  padding: 20px; /* Add some padding */
+  background-color: white; /* Background color of the rectangle */
+  border: 1px solid #ffffff; /* Optional border around the container */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  position: relative;
+  border-radius: 5px;
+}
+
+/* Logo positioning */
+.logo {
+  position: absolute;
+  display: block;
+  margin: 30px auto;
+  width: 150px;
+  top: 0;
+  left: 30px;
+}
+
+/* Form styling */
+header form {
+  display: flex;
+  gap: 10px;
+  margin-top: 80px;
+  border-radius: 15px;
+}
+
+/* Submit button */
+header input[type="submit"] {
+  background-color: #885df1;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 150px;
+}
+
+header input[type="submit"]:hover {
+  background-color: #885df1;
+}
+
+header input[type="search"] {
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #f9f7fe;
+  background-color: #f9f7fe;
+  border-radius: 5px;
+  width: 400px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+header input[type="search"]:focus {
+  border-color: #885df1;
+  box-shadow: 0 0 5px #472f85;
+}
+
+hr {
+  margin-top: 20px;
+  border: 0;
+  border-top: 1px solid #f9f7fe;
+}
+
+.current-weather {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.current-weather h1 {
+  margin: 0;
+  size: 70px;
+}
+
+.current-weather div {
+  font-size: ;
+}
+.current-weather span {
+  font-size: 60px;
+  font-weight: bold;
+}
+.current-weather p {
+  color: rgb(156, 156, 156);
+  font-size: 20px;
+}
+
+strong {
+  color: rgb(226, 133, 133);
+}
+body {
+  font-family: "PT Mono", monospace;
+  padding: 0 20px;
+}
+.pt-mono-regular {
+  font-family: "PT Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+footer p {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+footer a {
+  color: #885df1;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
