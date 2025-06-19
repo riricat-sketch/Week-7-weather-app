@@ -33,21 +33,28 @@ function handleSearch(event) {
   axios
     .get(apiUrl)
     .then(function (response) {
+      console.log(response.data); // ✅ Helps debugging
+      console.log(response.data.condition.icon_url);
       let temperature = Math.round(response.data.temperature.current);
       let cityName = response.data.city;
       let humidity = response.data.temperature.humidity;
       let wind = Math.round(response.data.wind.speed);
       let description = response.data.condition.description;
+      let iconUrl = response.data.condition.icon_url;
 
-      // Update city
+      // ✅ Update city
       document.querySelector("#city-name").textContent = cityName;
 
-      // Update temperature
-      document.querySelector(
-        ".current-weather span"
-      ).textContent = `🌤️${temperature}°C`;
+      // ✅ Update weather icon
+      let iconElement = document.querySelector("#weather-icon");
 
-      // Update date, weather details
+      iconElement.setAttribute("src", iconUrl);
+      iconElement.setAttribute("alt", description);
+
+      // ✅ Update temperature
+      document.querySelector("#temperature").textContent = `${temperature}°C`;
+
+      // ✅ Update date, humidity, wind
       updateDateTime(description, humidity, wind);
     })
     .catch(function (error) {
