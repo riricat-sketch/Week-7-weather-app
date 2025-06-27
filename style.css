@@ -1,23 +1,27 @@
+/* Ensure the body and html take up the full height of the page */
 html,
 body {
   height: 100%;
   margin: 0;
   display: flex;
   justify-content: center;
-  align-items: center;
-  background-color: #f4f4f4;
+  align-items: center; /* Center vertically */
+  background-color: #f4f4f4; /* Optional background color */
 }
+
+/* Container for the whole website */
 .container {
-  width: 100%;
-  max-width: 1600px;
-  padding: 20px;
-  background-color: white;
-  border: 1px solid #ffffff;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Adjust width as needed */
+  max-width: 1600px; /* Optional max-width for larger screens */
+  padding: 20px; /* Add some padding */
+  background-color: white; /* Background color of the rectangle */
+  border: 1px solid #ffffff; /* Optional border around the container */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
   position: relative;
   border-radius: 5px;
 }
 
+/* Logo positioning */
 .logo {
   position: absolute;
   display: block;
@@ -27,6 +31,7 @@ body {
   left: 30px;
 }
 
+/* Form styling */
 header form {
   display: flex;
   gap: 10px;
@@ -34,6 +39,7 @@ header form {
   border-radius: 15px;
 }
 
+/* Submit button */
 header input[type="submit"] {
   background-color: #885df1;
   color: white;
@@ -144,10 +150,4 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
-}
-#weather-icon {
-  display: none;
-}
-#weather-icon.visible {
-  display: inline;
 }
