@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="src/styles.css" />
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="index.js" defer></script>
+    <script src="src/index.js" defer></script>
     <title>My weather application</title>
 </head>
 
@@ -29,22 +29,20 @@
                         Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
                     </p>
                 </div>
-                <div class="weather-info">
-                    <img id="weather-icon" src="" alt="Weather Icon" />
-                    <span id="temperature">14°C</span>
-                </div>
+                <div><span>☀️14°C</span></div>
             </div>
-            <img id="weather-icon" src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
-                alt="Default weather icon" />
-
+            <div class="weather-forecast" id="forecast"></div>
+        </main>
         </main>
         <hr />
         <footer>
             <p>
                 This project was coded by
                 <a href="#" target="_blank">Ri Audoire</a> and is
-                <a href="#" target="_blank"> on GitHub</a> and
-                <a href="#" target="_blank">hosted on Netlify</a>
+                <a href="https://github.com/riricat-sketch" target="_blank">
+                    on GitHub</a>
+                and
+                <a href="https://app.netlify.com/teams/riricat-sketch/overview" target="_blank">hosted on Netlify</a>
             </p>
         </footer>
     </div>

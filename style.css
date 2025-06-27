@@ -1,27 +1,23 @@
-/* Ensure the body and html take up the full height of the page */
 html,
 body {
   height: 100%;
   margin: 0;
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  background-color: #f4f4f4; /* Optional background color */
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
 }
-
-/* Container for the whole website */
 .container {
-  width: 100%; /* Adjust width as needed */
-  max-width: 1600px; /* Optional max-width for larger screens */
-  padding: 20px; /* Add some padding */
-  background-color: white; /* Background color of the rectangle */
-  border: 1px solid #ffffff; /* Optional border around the container */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  width: 100%;
+  max-width: 1600px;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   position: relative;
   border-radius: 5px;
 }
 
-/* Logo positioning */
 .logo {
   position: absolute;
   display: block;
@@ -30,18 +26,7 @@ body {
   top: 0;
   left: 30px;
 }
-.weather-info {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
 
-#weather-icon {
-  width: 60px;
-  height: 60px;
-}
-
-/* Form styling */
 header form {
   display: flex;
   gap: 10px;
@@ -49,7 +34,6 @@ header form {
   border-radius: 15px;
 }
 
-/* Submit button */
 header input[type="submit"] {
   background-color: #885df1;
   color: white;
@@ -113,6 +97,34 @@ strong {
 body {
   font-family: "PT Mono", monospace;
   padding: 0 20px;
+}
+.weather-forecast {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.weather-forecast-date {
+  background: #f9f7fe;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  flex: 1;
+  margin: 0 5px;
+}
+.weather-forecast-icon {
+  font-size: 38px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.weather-forecast-temperatures {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.weather-forecast-temperature {
+  padding: 0 10px;
 }
 .pt-mono-regular {
   font-family: "PT Mono", monospace;
