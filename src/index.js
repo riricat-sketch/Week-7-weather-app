@@ -61,7 +61,6 @@ function getForecast(city) {
     .catch((err) => console.error("Forecast error:", err));
 }
 
-// NEW: reusable function to get and display city weather
 function searchCity(city) {
   const apiKey = "ctec04f17ee45ebe9b5ffoa34af106fa";
   const apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
@@ -88,7 +87,6 @@ function searchCity(city) {
     });
 }
 
-// Existing event handler just uses the reusable function
 function handleSearch(event) {
   event.preventDefault();
   const inputElement = document.querySelector('input[type="search"]');
@@ -98,9 +96,7 @@ function handleSearch(event) {
   }
 }
 
-// Attach event listener
 document.querySelector("form").addEventListener("submit", handleSearch);
 
-// Set default city on load
 document.querySelector('input[type="search"]').value = "Paris";
 searchCity("Paris");
